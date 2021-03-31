@@ -1,0 +1,107 @@
+
+/* CSS GRID aplicado */
+.content {
+    display:grid;
+    grid-template-areas: "header header header"
+                          "navbar navbar navbar"  
+                          "main main main"
+                          "testimony testimony testimony"
+                          "sec1 sec1 sec3"
+                          "sec2 sec2 sec3"
+                          "footer footer footer";
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+}
+
+.sen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+.header-pag {
+    grid-area: header;
+    text-align: center;
+    font-size: 20px;
+}
+
+.nav-pag {
+    grid-area: navbar;
+    height: 50px;
+    justify-content: start;
+}
+
+.main-pag {
+    grid-area: main;
+    height: 200px;
+    font-size: 25px;
+}
+
+.testimony-pag {
+    grid-area: testimony;
+}
+
+.seccion-1 {
+    grid-area: sec1;
+    height: 300px;
+}
+
+.seccion-2 {
+    grid-area: sec2;
+}
+
+.seccion-3 {
+    grid-area: sec3;
+}
+
+.footer-pag {
+    grid-area: footer;
+    height: 100px;
+    background-color: gray;
+    color: honeydew;
+}
+
+.content-nav {
+    width: 400px;
+    display: flex;
+}
+
+.content-nav li{
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* medidas para una pagina responsive */
+@media (max-width: 1650px) and (min-width: 1261px) {
+    .content {
+        display:grid;
+        grid-template-areas: "header header"
+                              "navbar navbar"  
+                              "main main"
+                              "testimony testimony"
+                              "sec1 sec3"
+                              "sec2 sec3"
+                              "footer footer";
+        grid-row-gap: 1px;
+        grid-column-gap: 1px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .content {
+        display:grid;
+        grid-template-areas: "header"
+                              "navbar"  
+                              "main"
+                              "testimony"
+                              "sec1"
+                              "sec2"
+                              "sec3"
+                              "footer";
+        grid-row-gap: 1px;
+        grid-column-gap: 1px;
+    }
+}

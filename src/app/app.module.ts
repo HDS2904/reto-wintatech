@@ -6,16 +6,23 @@ import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { SliderComponent } from './components/slider/slider.component';
+import { HomeComponent } from './pages/home/home.component';
+
+import { PagesModule } from './pages/pages.module';
+import { Page2Component } from './pages/page2/page2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SliderComponent
+    SliderComponent,
+    HomeComponent,
+    Page2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

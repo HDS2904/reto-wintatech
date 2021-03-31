@@ -8,15 +8,16 @@
 }
 
 .slider-horizontal {
-    width: 100%;
+    width: -100%;
     display: flex; /* Uso de Flexbox para posicionamiento de los testimonios de manera horizontal*/
 }
 
 .slider-item {
+    height: 400px;
+    padding: 0.5%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    width: 100%;
-    padding: 30px 60px;  /*cuidado que esto debe ser estático*/
     font-size: 24px;
 }
 

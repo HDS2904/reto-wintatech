@@ -16,13 +16,11 @@
     </div>
 
     <!-- Etiqueta de precarga -->
-    <div class="slider-horizontal" *ngIf="carga" >
+    <div class="slider-horizontal" [ngStyle]="myStyle"  *ngIf="carga" >
         <div class="slider-item" >
             <img src="../../../assets/img/img-carga.jpg" alt="" class="client-photo">
             <p class="client-name">CARGANDO TESTIMONIOS</p>
-            <p class="client-coment">................................................................................................................
-                .....................................................................................................................................
-                ......................................................................</p>
+            <p class="client-coment">.........</p>
         </div>
     </div>
     <!-- boton derecho -->

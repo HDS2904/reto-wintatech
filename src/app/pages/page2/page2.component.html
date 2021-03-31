@@ -1,0 +1,42 @@
+
+<div class="content">
+
+    <header class="header-pag sen">
+        <h1>ENCABEZADO DE PAGINA 2</h1>
+    </header>
+
+    <div class="nav-pag sen">
+        <h3 >BARRA DE MENÚ</h3>
+        <nav>
+            <ul class="content-nav">
+                <li><div [routerLink]="['/home']">Home</div></li>
+                <li><div (click)="present()">Página 2</div></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-pag sen">
+        <div>
+            <h3>{{palabra}}</h3>
+        </div>
+    </main>
+    
+    <div class="seccion-1 sen">
+        <p>SECCIÓN 1</p>
+    </div>
+    
+    <div class="seccion-2 sen">
+        <p>SECCIÓN 2</p>
+    </div>
+
+    <app-slider class="testimony-pag"></app-slider>
+
+    <div class="seccion-3 sen">
+        <p>SECCIÓN 3</p>
+    </div>
+
+    <div class="footer-pag sen">
+        <footer>ESTE ES UN FOOTER</footer>
+    </div>
+
+</div>
