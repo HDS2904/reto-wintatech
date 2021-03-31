@@ -1,27 +1,14 @@
 # RetoWintatech
+Este proyecto se desarrolla como parte de un reto para realizar prácticas preprofesionales en una emrpesa.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+## Guía de levantamiento
+###1) clonar el presente proyecto en su entorno.
+###2) Una vez clonado, abrir la terminal y ubicarse en la carpeta del proyecto ".../reto-wintatech".
+###3) ejecutar el comando npm install (debería tener node.js y angular de la versión 8 a más instalado previamente).
+###4) por último ejecutar el comando "ng serve -o" para correr el proyecto en la dirección "http://localhost:4200/".
 
-## Development server
+## Auxiliares
+Se uso el proyecto rest-api que se subió a heroku "https://rest-server-one.herokuapp.com/".
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Agradecimientos
+Bueno espero cumplir con las expectativas de la empresa con el desarrollo del presente proyecto y de no ser así, el proyecto me hizo repasar referente a programación web y backend ya que se usó un proyecto API-REST para la obtención de datos.
