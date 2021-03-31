@@ -20,12 +20,7 @@ export class TestimoniesService {
 
   // comunicación con la API por GET
   getTestimonies() {
-    const params = new HttpParams({
-      fromObject: {
-        desde: '0',
-        limite: '8'
-      }
-    });
+    let params = new HttpParams().set('desde', '0').set('limite','10');
     return this.http.get(`${this.url}testimony/`,{params})
     .pipe(
       map( this.tratamiento )

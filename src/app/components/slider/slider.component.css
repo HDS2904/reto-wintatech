@@ -2,7 +2,7 @@
 
 .content-slider {
     background-color: rgb(126, 185, 126);
-    border: 10px solid black;
+    border: 3px solid black;
     overflow: hidden;
     position: relative
 }
@@ -52,6 +52,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    border: 3px solid black;
 }
 
 [class*="btn-color"] {
