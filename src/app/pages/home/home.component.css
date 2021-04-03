@@ -9,15 +9,13 @@
                           "sec1 sec1 sec3"
                           "sec2 sec2 sec3"
                           "footer footer footer";
-    grid-row-gap: 2px;
-    grid-column-gap: 2px;
 }
 
 .sen {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 .header-pag {
@@ -27,6 +25,9 @@
 }
 
 .nav-pag {
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 38, 38);
+    padding: 2px 50px;
     grid-area: navbar;
     height: 50px;
     justify-content: start;
@@ -38,8 +39,15 @@
     font-size: 25px;
 }
 
+
 .testimony-pag {
     grid-area: testimony;
+}
+
+.testimony-pag h4 {
+    padding: 10px;
+    font-size: 25px;
+    margin: 0;
 }
 
 .seccion-1 {
@@ -75,7 +83,7 @@
 }
 
 /* medidas para una pagina responsive */
-@media (max-width: 1650px) and (min-width: 1261px) {
+@media (max-width: 1367px) and (min-width: 1041px) {
     .content {
         display:grid;
         grid-template-areas: "header header"
@@ -90,7 +98,7 @@
     }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1040px) {
     .content {
         display:grid;
         grid-template-areas: "header"

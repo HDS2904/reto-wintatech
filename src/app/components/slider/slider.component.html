@@ -2,30 +2,37 @@
 
     <!-- boton izquierdo -->
     <div class="slider-buttom-left" (click)="runPosition(0)" *ngIf="waitClick">
-        <img src="../../../assets/img/left-arrow-64.png" alt="">
+        <img src="../../../assets/img/left-arrow-32.png" alt="">
     </div>
 
     <!-- ngStyle para asignar lineas css del objeto myStyle y ngFor para iterar tantos slider-item como objetos de la lista listTestimony -->
     <div class="slider-horizontal" [ngStyle]="myStyle" *ngIf="!carga" >
         <!-- ngfor para generar tantas equiquetas div con su respectivo contenido segun la lista de objetos listTestimony -->
         <div class="slider-item" *ngFor="let testimony of listTestimony">
-            <img src={{testimony.photo}} alt="" class="client-photo">
+            <div class="client-photo">
+                <img src={{testimony.photo}} >
+            </div>
             <p class="client-name">{{testimony.nameUser}}</p>
-            <p class="client-coment">{{testimony.opinion}}</p>
+            <div class="line-sep"></div>
+            <div class="client-coment">
+                <blockquote class="comill-left"></blockquote>
+                <p>{{testimony.opinion}}</p>
+                <blockquote class="comill-right"></blockquote>
+            </div>
         </div>
     </div>
 
     <!-- Etiqueta de precarga -->
     <div class="slider-horizontal" [ngStyle]="myStyle"  *ngIf="carga" >
         <div class="slider-item" >
-            <img src="../../../assets/img/img-carga.jpg" alt="" class="client-photo">
+            <div class="client-photo"><img src="../../../assets/img/img-carga.jpg" alt=""></div>
             <p class="client-name">CARGANDO TESTIMONIOS</p>
             <p class="client-coment">.........</p>
         </div>
     </div>
     <!-- boton derecho -->
     <div class="slider-buttom-right" (click)="runPosition(1)" *ngIf="waitClick">
-        <img src="../../../assets/img/right-arrow-64.png" alt="">
+        <img src="../../../assets/img/right-arrow-32.png" alt="">
     </div>
     
 </div>

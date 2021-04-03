@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page2Component implements OnInit {
 
-  palabra: string = 'PAGINA SECUNDARIA';
+  palabra: string = 'SEGUNDA PÁGINA';
 
   constructor() { }
 

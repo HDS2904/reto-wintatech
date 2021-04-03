@@ -5,9 +5,9 @@
     grid-template-areas: "header header header"
                           "navbar navbar navbar"  
                           "main main main"
-                          "sec1 sec1 sec1"
+                          "sec1 sec2 sec3"
                           "testimony testimony testimony"
-                          "sec2 sec2 sec3"
+                          "sec4 sec4 sec4"
                           "footer footer footer";
 }
 
@@ -52,16 +52,20 @@
 
 .seccion-1 {
     grid-area: sec1;
-    height: 100px;
+    height: 200px;
 }
 
 .seccion-2 {
     grid-area: sec2;
-    height: 200px;
 }
 
 .seccion-3 {
     grid-area: sec3;
+}
+
+.seccion-4 {
+    grid-area: sec4;
+    height: 200px;
 }
 
 .footer-pag {
@@ -90,9 +94,10 @@
         grid-template-areas: "header header"
                               "navbar navbar"  
                               "main main"
+                              "sec1 sec2"
+                              "sec3 sec3"
                               "testimony testimony"
-                              "sec1 sec3"
-                              "sec2 sec3"
+                              "sec4 sec4"
                               "footer footer";
         grid-row-gap: 1px;
         grid-column-gap: 1px;
@@ -105,10 +110,11 @@
         grid-template-areas: "header"
                               "navbar"  
                               "main"
-                              "testimony"
                               "sec1"
                               "sec2"
                               "sec3"
+                              "testimony"
+                              "sec4"
                               "footer";
         grid-row-gap: 1px;
         grid-column-gap: 1px;

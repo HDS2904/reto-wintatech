@@ -1,8 +1,9 @@
 
 <div class="content">
 
-    <header class="header-pag sen">
-        <h1>ENCABEZADO DE PAGINA 1</h1>
+    <header class="header-pag">
+        <h1>RETO WINTATECH</h1>
+        <P>(PÁGINA 1)</P>
     </header>
 
     <div class="nav-pag sen">
@@ -11,6 +12,7 @@
             <ul class="content-nav">
                 <li><div (click)="present()">Home</div></li>
                 <li><div [routerLink]="['/page2']">Página 2</div></li>
+                <li><div [routerLink]="['/page3']">Página 3</div></li>
             </ul>
         </nav>
     </div>
@@ -21,7 +23,10 @@
         </div>
     </main>
     
-    <app-slider class="testimony-pag"></app-slider>
+    <div class="testimony-pag">
+        <h4>¿Qué comentan nuestros clientes sobre nosotros?</h4>
+        <app-slider></app-slider>
+    </div>
 
     <div class="seccion-1 sen">
         <p>SECCIÓN 1</p>

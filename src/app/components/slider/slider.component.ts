@@ -23,7 +23,7 @@ export class SliderComponent implements OnInit {
     this.colorFond = {};
     this.listTestimony = [];
     this.carga = true;
-    this.waitClick = true;
+    this.waitClick = false;
   }
 
   ngOnInit(): void {
@@ -33,11 +33,18 @@ export class SliderComponent implements OnInit {
         this.listTestimony = resp;
         this.setPosition(0.5);
         this.carga = false;
+        this.waitClick = true;
+        this.runAuto();
       })
 
-    // ejecuta la función de runRight cada 8 segundos automaticamente
+  }
+
+  // ejecuta la función de runRight cada 8 segundos automaticamente
+  runAuto() {
     setInterval(() => {
-      this.runPosition(1);
+      if (this.waitClick){
+        this.runPosition(1);
+      }
     },8000)
   }
 
@@ -81,6 +88,7 @@ export class SliderComponent implements OnInit {
     }
   }
 
+  //Aplica el color de fondo para el slider 
   fondSlider(op: number) {
     switch(op) {
       case 1: this.colorFond = {
